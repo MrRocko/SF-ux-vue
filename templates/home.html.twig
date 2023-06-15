@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Title</h1>
+    <div {{ vue_component('MyComponent', { 'name': name, 'notifications': notifications }) }}></div>
+{% endblock %}
